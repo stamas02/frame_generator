@@ -1,10 +1,10 @@
 from setuptools import setup
 
 
-
+long_description_content_type = "text/markdown"
 with open("README.md", 'r') as f:
     long_description = f.read()
-long_description_content_type = "text/markdown"
+
 
 
 setup(
@@ -16,6 +16,7 @@ setup(
    long_description=long_description,
    author='Tamas Suveges',
    url = 'https://github.com/stamas02/frame_generator',
+   download_url = 'https://github.com/stamas02/frame_generator/archive/v_01.tar.gz',
    author_email='stamas01@gmail.com',
    packages=['frame_generator'],
    install_requires=['opencv-python', 'tabulate'],
