@@ -1,7 +1,11 @@
 from setuptools import setup
 
+
+
 with open("README.md", 'r') as f:
     long_description = f.read()
+long_description_content_type = "text/markdown"
+
 
 setup(
    name='frame_generator',
@@ -10,9 +14,8 @@ setup(
    license="MIT",
    keywords = ['vide', 'frame', 'frame-reader'],
    long_description=long_description,
-   author='Tamás Süveges',
+   author='Tamas Suveges',
    url = 'https://github.com/stamas02/frame_generator',
-   download_url = 'https://github.com/stamas02/frame_generator/archive/v_01.tar.gz',
    author_email='stamas01@gmail.com',
    packages=['frame_generator'],
    install_requires=['opencv-python', 'tabulate'],
